@@ -1,7 +1,24 @@
 aid: hello-gold
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/hello-gold.png
 name: Hello Gold
-description: Hello Gold is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: HelloGold is a Malaysian fintech company operating a mobile gold-savings app that lets everyday
+  users buy, save, sell, send, and redeem 99.99% investment-grade gold starting from as little as RM1, with
+  physical redemption from a minimum of 1 gram. Its SmartSaver feature runs an automated 12-month savings
+  plan that buys gold at the lowest weekday price on the user's behalf. The service is Shariah-compliant
+  (certified by Amanie Advisors), with gold stored in an insured and audited Singapore vault. HelloGold is
+  a portfolio company of 500 Global and a recognized Islamic-fintech player. This profile is a consumer
+  mobile-app company with no public developer/API surface identified during enrichment.
 url: https://raw.githubusercontent.com/api-evangelist/hello-gold/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +28,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Fintech
+- Gold
+- Savings
+- Investing
+- Islamic Finance
+- Mobile App
+- Malaysia
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,4 +46,11 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://hellogold.com
+  url: https://www.hellogold.com
+- type: DomainSecurity
+  url: security/hello-gold-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
